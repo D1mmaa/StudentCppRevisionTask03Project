@@ -48,7 +48,7 @@
 */
 
 string task02(int a, int b, int n) {
-	if (n <= 0 || a <= 0 && b <= 0) {
+	if (n <= 0 || (a == 0 && b == 0) || a < 0 || b < 0) {
 		return "error";
 	}
 	int cop = b * n % 100;
